@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>2020 Covid Rates</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class='map-overlay' id='features'>
+        <h2>US Covid Rates</h2>
+        <div id='text-description'>
+            <p>Hover over a County!</p>
+        </div>
+    </div>
+    <div class='map-overlay' id='legend'></div>
+    <div id="source">
+        <p>Source: <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">COVID-19 case/death data,
+                   <a href="https://data.census.gov/table?g=0100000US$050000&d=ACS+5-Year+Estimates+Data+Profiles&tid=ACSDP5Y2018.DP05&hidePreview=true">The population data,
+                   <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">The U.S. county boundary shapefile</a>
+        </p>
+    </div>
+    <script src="js/main1.js"></script>
+
+</body>
+
+</html>
